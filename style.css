@@ -48,7 +48,7 @@ body {
   font-size: 11px;
   letter-spacing: 2px;
   text-decoration: none;
-  background: linear-gradient(to right, hsl(236, 72%, 75%), hsl(237, 63%, 64%));
+  background: linear-gradient(hsl(236, 72%, 75%), hsl(237, 63%, 64%));
   color: white;
 }
 .plan:hover {
