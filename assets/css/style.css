@@ -47,9 +47,10 @@ body {
   font-size: 0.8em;
   padding: 10% 0;
   border-top: 0.1em solid hsl(240, 78%, 94%);
+  border-bottom: 0.1em solid hsl(240, 78%, 94%);
 }
-.learn-more a {
-  padding: 0.7em 3.5em;
+.learn-more  {
+  padding: 0.7em 6em;
   border-radius: 0.4px;
   font-size: 0.7em;
   letter-spacing: 0.1em;
@@ -59,10 +60,10 @@ body {
 }
 .plan:hover {
   transform: scale(1.1);
-  background: linear-gradient(hsl(236, 72%, 75%), hsl(237, 63%, 64%));
+  background: linear-gradient(to right, hsl(236, 72%, 75%), hsl(237, 63%, 64%));
   color: white;
 }
-.plan:hover a {
+.plan:hover .learn-more{
   background: #ffffff;
   color: hsl(237, 63%, 64%);
 }
@@ -70,8 +71,11 @@ body {
 .switch {
   position: relative;
   display: inline-block;
-  width: 3.5%;
+  width: 50px;
   height: 25px;
+  margin-left: 1em;
+  margin-right: 1em;
+
 }
 .slider {
   position: absolute;
@@ -80,7 +84,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
+  background-color: hsl(236, 72%, 75%);
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -98,11 +102,11 @@ body {
 }
 
 input:checked + .slider {
-  background-color: #2196f3;
+  background-color:  hsl(236, 72%, 75%);
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #2196f3;
+  box-shadow: 0 0 1px hsl(236, 72%, 75%);
 }
 
 input:checked + .slider:before {
@@ -150,17 +154,20 @@ input:checked + .slider:before {
   .switch {
     position: relative;
     display: inline-block;
-    width: 13%;
+    width: 50px;
     height: 25px;
+    margin-left: 1em;
+    margin-right: 1em;
+
   }
-  .slider {
+  .slider { 
     position: absolute;
     cursor: pointer;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #ccc;
+    background-color: hsl(236, 72%, 75%);
     -webkit-transition: 0.4s;
     transition: 0.4s;
   }
@@ -168,21 +175,21 @@ input:checked + .slider:before {
   .slider:before {
     position: absolute;
     content: "";
-    height: 18px;
-    width: 18px;
+    height: 1.2em;
+    width: 1.2em;
     left: 4px;
     bottom: 4px;
-    background-color: white;
+    background-color:white;
     -webkit-transition: 0.4s;
     transition: 0.4s;
   }
 
   input:checked + .slider {
-    background-color: #2196f3;
+    background-color:  hsl(236, 72%, 75%);
   }
 
   input:focus + .slider {
-    box-shadow: 0 0 1px #2196f3;
+    box-shadow: 0 0 1px hsl(236, 72%, 75%);
   }
 
   input:checked + .slider:before {
@@ -192,7 +199,7 @@ input:checked + .slider:before {
   }
 
   .slider.round {
-    border-radius: 25px;
+    border-radius: 1.8em;
   }
 
   .slider.round:before {
